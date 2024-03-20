@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Irsyad</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div > p{
+            background-color: yellow;
+        }
+        div + p{
+            background-color: darkgray;
+        }
+        div ~p{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a first paragraph.Ini akan mengubah warna teks pada semua elemen p yang berada di dalam elemen div menjadi merah</p>
+        <p>This is a second paragraph.Ini akan mengubah warna latar pada elemen p yang ada di langsungan (direct child) dari elemen div menjadi kuning.</p>
+    </div>
+    <p>This is a third paragraph. Ini akan mengubah warna latar pada elemen p yang berada setelah (sibling) elemen div menjadi abu-abu gelap.</p>
+    <p>This is a fourth paragraph. Ini akan mengubah warna teks pada elemen p yang berada di sebelah (sibling) elemen div menjadi biru muda.</p>
+</body>
+</html>
